@@ -1,9 +1,0 @@
-{
-  "name": "diario-de-trabalho-server",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Diário de Trabalho com dados guardados no servidor",
-  "main": "server.js",
-  "scripts": { "start": "node server.js" },
-  "engines": { "node": ">=18" }
-}
