@@ -1,19 +1,6 @@
 services:
   - type: web
     name: diario-de-trabalho
-    runtime: node
-    plan: starter
+    runtime: static
     buildCommand: "true"
-    startCommand: node server.js
-    healthCheckPath: /healthz
-    envVars:
-      - key: APP_PASSWORD
-        sync: false
-      - key: SESSION_SECRET
-        generateValue: true
-      - key: DATA_DIR
-        value: /var/data
-    disk:
-      name: dados
-      mountPath: /var/data
-      sizeGB: 1
+    staticPublishPath: public
